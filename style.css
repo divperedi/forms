@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&family=Share:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +7,65 @@
 }
 
 body {
-    background-color: rgb(235, 231, 226);
+    background-color: rgb(243, 243, 243);
+    max-width: 1000px;
+    margin: 0px auto 0px auto;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 .form-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 13px;
+    padding: 20px;
+    box-shadow: 5px 2px 12px -1px rgba(158, 158, 158, 0.75);
+}
+
+.form__form-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+.form__input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input,
+select {
+    border-radius: 3px;
+    padding: 13px;
+    border: solid 1px rgb(97, 97, 97);
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    background-color: rgb(251, 75, 75);
+    color: white;
+    border-radius: 7px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: rgb(249, 40, 40);
+    color: white;
+    cursor: pointer;
 }
