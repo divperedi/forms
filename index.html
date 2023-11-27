@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h1>Jobbansökan</h1>
+            <form class="form">
+                <div class="form__form-inner">
+                    <div class="form__input-group">
+                        <label for="fName">Förnamn:</label>
+                        <input type="text" id="fName" placeholder="Ange förnamn...">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="lName">Efternamn:</label>
+                        <input type="text" id="lName" placeholder="Ange efternamn...">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="email">Mailadress:</label>
+                        <input type="email" id="email" placeholder="Ange mail...">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="role">Önskad roll:</label>
+                        <select name="job-role" id="role">
+                            <option value="">Önskad roll:</option>
+                            <option value="frontend">Frontendutvecklare</option>
+                            <option value="backend">Backendutvecklare</option>
+                            <option value="fullstack">Fullstackutvecklare</option>
+                            <option value="artDirector">Art Director</option>
+                            <option value="test">Testare</option>
+                            <option value="project">Projektledare</option>
+                            <option value="accessibility">Tillgänglighetskontrollant</option>
+                        </select>
+                    </div>
+                    <div class="form__input-group">
+                        <label for="address">Adress:</label>
+                        <input type="address" id="address" placeholder="Ange adress..">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="city">Stad:</label>
+                        <input type="text" id="city" placeholder="Ange stad...">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="postalCode">Postnummer:</label>
+                        <input type="number" id="postalCode" placeholder="Ange postnummer...">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="date">Datum:</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="cv">Lagga upp ditt CV:</label>
+                        <input type="file" id="cv">
+                    </div>
+                    <div class="form__input-group">
+                        <label for="letter">Ladda upp ditt personliga brev:</label>
+                        <input type="file" id="letter">
+                    </div>
+                </div>
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
