@@ -11,6 +11,7 @@ body {
     max-width: 1000px;
     margin: 0px auto 0px auto;
     font-family: 'Saira Extra Condensed', sans-serif;
+    color: rgb(131, 174, 68);
 }
 
 h1 {
@@ -44,7 +45,20 @@ input,
 select {
     border-radius: 3px;
     padding: 13px;
-    border: solid 1px rgb(97, 97, 97);
+    border: solid 1px rgb(131, 174, 68);
+    background-color: rgb(255, 221, 238);
+}
+
+input {
+    transition: 0.4s ease-in-out;
+}
+
+select:hover {
+    background-color: rgb(202, 245, 137);
+}
+
+select:focus {
+    border: 3px solid rgb(164, 200, 111);
 }
 
 .button-container {
@@ -56,16 +70,36 @@ select {
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
-    background-color: rgb(251, 75, 75);
+    background-color: hotpink;
     color: white;
     border-radius: 7px;
     padding: 15px 30px;
-    border: none;
+    border: solid 2px rgb(131, 174, 68);
     cursor: pointer;
 }
 
 .send-button:hover {
-    background-color: rgb(249, 40, 40);
+    background-color: rgb(255, 51, 153);
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .form__form-inner {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .form__input-group {
+        width: ;
+    }
+
 }
